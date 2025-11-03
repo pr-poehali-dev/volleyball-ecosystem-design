@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -15,7 +16,9 @@ const Index = () => {
             <a href="#stats" className="text-gray-600 hover:text-primary transition-colors">
               Статистика
             </a>
-            <Button>Войти</Button>
+            <Link to="/login">
+              <Button>Войти</Button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -32,9 +35,11 @@ const Index = () => {
               Объединяем игроков, команды и турниры в единую платформу
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-6">
-                Начать играть
-              </Button>
+              <Link to="/register">
+                <Button size="lg" className="text-lg px-8 py-6">
+                  Начать играть
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6">
                 Узнать больше
               </Button>
@@ -163,9 +168,11 @@ const Index = () => {
           <p className="text-xl mb-8 text-white/90">
             Начните играть в волейбол на новом уровне
           </p>
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
-            Создать аккаунт
-          </Button>
+          <Link to="/register">
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
+              Создать аккаунт
+            </Button>
+          </Link>
         </div>
       </section>
 
