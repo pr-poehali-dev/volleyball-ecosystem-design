@@ -26,6 +26,9 @@ const Index = () => {
             <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">
               О платформе
             </a>
+            <Link to="/constellation-id" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">
+              Constellation ID
+            </Link>
             <Link to="/login">
               <Button>Войти</Button>
             </Link>
